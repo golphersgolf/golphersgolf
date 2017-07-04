@@ -3,6 +3,12 @@
     Hello world.
   </li>
   <li>
+    <%= form_tag golf_courses_path, method: :get do %>
+      <%= text_field_tag "search" %>
+      <%= submit_tag "Search" %>
+    <% end %>
+  </li>
+  <li>
     <%= link_to "Register", new_user_registration_path %>
   </li>
   <li>
